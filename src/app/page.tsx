@@ -51,10 +51,10 @@ export default function Home() {
         </div>
       </div>
 
-      <TextGenerateEffectDemo></TextGenerateEffectDemo>
+      {/* <TextGenerateEffectDemo></TextGenerateEffectDemo>
       <InfiniteMovingCardsDemo></InfiniteMovingCardsDemo>
       <AboutCards></AboutCards>
-      <ShootingStarsAndStarsBackgroundDemo></ShootingStarsAndStarsBackgroundDemo>
+      <ShootingStarsAndStarsBackgroundDemo></ShootingStarsAndStarsBackgroundDemo> */}
     </main>
   );
 }
