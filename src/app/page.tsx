@@ -1,6 +1,6 @@
 import AboutCards from "@/components/About/AboutCards";
 import CardSpread from "@/components/animata/card/card-spread";
-import { InfiniteMovingCardsDemo } from "@/components/Hero/movingCards";
+import { InfiniteDobTicker } from "@/components/Hero/InfiniteDobTicker";
 import { ShootingStarsAndStarsBackgroundDemo } from "@/components/Hero/ShootingStarsAndStarsBackgroundDemo";
 import { TextGenerateEffectDemo } from "@/components/Hero/TextGenerateEffectDemo";
 import { ThreeDCardDemo } from "@/components/Hero/ThreeDCardDemo";
@@ -44,11 +44,7 @@ export default function Home() {
             />
           </div>
         </div>
-
-        {/* Infinite Moving Cards Component */}
-        <div>
-          <InfiniteMovingCardsDemo />
-        </div>
+          <InfiniteDobTicker />
       </div>
 
       {/* <TextGenerateEffectDemo></TextGenerateEffectDemo>
