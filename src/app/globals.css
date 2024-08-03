@@ -64,6 +64,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-[#3aafa9] text-white;
+    @apply bg-neutral-900 text-white;
   }
 }

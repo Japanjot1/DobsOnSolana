@@ -1,17 +1,20 @@
 import AboutCards from "@/components/About/AboutCards";
 import CardSpread from "@/components/animata/card/card-spread";
 import { InfiniteDobTicker } from "@/components/Hero/InfiniteDobTicker";
+import { InitialLoader } from "@/components/Hero/Loader";
 import { ShootingStarsAndStarsBackgroundDemo } from "@/components/Hero/ShootingStarsAndStarsBackgroundDemo";
 import { TextGenerateEffectDemo } from "@/components/Hero/TextGenerateEffectDemo";
 import { ThreeDCardDemo } from "@/components/Hero/ThreeDCardDemo";
 import Navbar from "@/components/Navbar/Navbar";
 import { FlipWords } from "@/components/ui/flip-words";
+import { MultiStepLoader } from "@/components/ui/multi-step-loader";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 
 export default function Home() {
   return (
     <main>
+      <InitialLoader></InitialLoader>
       <ShootingStars starColor="#3aafa9" trailColor="3aafa9" minDelay={500} starHeight={2} starWidth={20}></ShootingStars>
       <StarsBackground starDensity={0.0009} twinkleProbability={0.9}></StarsBackground>
       <Navbar />
