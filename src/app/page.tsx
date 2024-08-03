@@ -18,7 +18,7 @@ export default function Home() {
       <ShootingStars starColor="#3aafa9" trailColor="3aafa9" minDelay={500} starHeight={2} starWidth={20}></ShootingStars>
       <StarsBackground starDensity={0.0009} twinkleProbability={0.9}></StarsBackground>
       <Navbar />
-      <div className="flex flex-col min-h-screen bg-neutral-900">
+      <div className="flex flex-col min-h-screen bg-gradient-to-t from-green-200 to-sky-600">
         {/* Main Content */}
         <div className="flex-grow flex font-digital flex-col md:flex-row items-center justify-center px-6 md:px-12 lg:px-24 xl:px-32">
           {/* Text Content */}

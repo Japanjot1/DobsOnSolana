@@ -16,7 +16,7 @@ const loadingStates = [
     text: "Unlocking Financial Freedom...",
   },
   {
-    text: "Welcome to $Dobs World",
+    text: "Welcome to Dobs World",
   },
 ];
 

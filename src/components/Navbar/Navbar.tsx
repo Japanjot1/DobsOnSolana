@@ -23,7 +23,7 @@ export default function Navbar() {
         <Avatar>
           <AvatarImage src="/DobsLogo.png" alt="@shadcn" />
         </Avatar>
-        <span className="text-xl text-[#3aafa9] font-extrabold"><span className="font-sans">$</span>Dobs</span>
+        <span className="text-xl text-white font-extrabold"><span className="font-sans">$</span>Dobs</span>
       </Link>
       <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
         <Link href="#" prefetch={false}>
@@ -62,7 +62,7 @@ export default function Navbar() {
             <MenuIcon className="h-5 w-5" />
             <span className="sr-only">Toggle navigation menu</span>
           </Button></DropdownMenuTrigger>
-        <DropdownMenuContent className="bg-neutral-900 text-white m-2"> 
+        <DropdownMenuContent className="bg-transparent text-white m-2"> 
           <DropdownMenuItem className="hover:bg-[#3aafa9]/50">About</DropdownMenuItem>
           <DropdownMenuItem className="hover:bg-[#3aafa9]/50">Buy</DropdownMenuItem>
           <DropdownMenuItem className="hover:bg-[#3aafa9]/50">Roadmap</DropdownMenuItem>
