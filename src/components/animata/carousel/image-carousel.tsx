@@ -27,7 +27,7 @@ export default function ImageCarousel({ items: initialItems }: IImageCarouselPro
   const visibleItems = visibleIndices.map((index) => initialItems[index]);
 
   return (
-    <div className="carousel-container relative h-[400px] w-[400px] overflow-hidden-y rounded-2xl bg-transparent p-2">
+    <div className="carousel-container relative h-[400px] w-[400px] overflow-hidden rounded-2xl bg-transparent p-2">
       <div
         onClick={handlePrev}
         className="navigation-item-left absolute left-0 top-[50%] z-20 flex h-10 w-10 translate-y-[-50%] cursor-pointer items-center justify-center rounded-lg bg-gray-400 bg-opacity-40 bg-clip-padding backdrop-blur-sm backdrop-filter"
@@ -48,7 +48,7 @@ export default function ImageCarousel({ items: initialItems }: IImageCarouselPro
           }
           style={{
             backgroundImage: `url(${item.image})`,
-            backgroundSize: "cover",
+            backgroundSize: "fit",
             transform:
               index === 1
                 ? "translateX(-50%) scale(1.1)"

@@ -9,7 +9,8 @@ import { ThreeDCardDemo } from "@/components/Hero/ThreeDCardDemo";
 import Navbar from "@/components/Navbar/Navbar";
 import Example from "@/components/Roadmap/Roadmap";
 import DobMerch from "@/components/DobMerchandise/DobMerch";
-import Dobonomics from "@/components/DobMerchandise/DobMerch";
+import Dobonomics from "@/components/Tokenomics/Dobonomics";
+
 import { FlipWords } from "@/components/ui/flip-words";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
@@ -64,6 +65,7 @@ export default function Home() {
       <Example></Example>
     </section>
       <DobMerch></DobMerch>
+      <Dobonomics></Dobonomics>
       {/* <TextGenerateEffectDemo></TextGenerateEffectDemo>
       <InfiniteMovingCardsDemo></InfiniteMovingCardsDemo>
       <AboutCards></AboutCards>
