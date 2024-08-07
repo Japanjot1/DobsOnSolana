@@ -23,6 +23,10 @@ const config = {
       },
     },
     extend: {
+      transitionTimingFunction: {
+        slow: "cubic-bezier(.405, 0, .025, 1)",
+        "minor-spring": "cubic-bezier(0.18,0.89,0.82,1.04)",
+     },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -60,6 +64,7 @@ const config = {
       },
       fontFamily: {
         digital: "var(--font-digital)",
+        digitalFam: ['var(--font-digital)', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -79,6 +84,10 @@ const config = {
         150: "1.5",
       },
       keyframes: {
+        "fadeIn" : {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -96,8 +105,9 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "scroll":
-          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        "scroll":"scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        "meteor-effect": "meteor 5s linear infinite",
+        "fadeIn": "fadeIn 0.5s ease-in",
       },
     },
   },

@@ -1,21 +1,25 @@
-import AboutCards from "@/components/About/AboutCards";
-import CardSpread from "@/components/animata/card/card-spread";
+
+import TiltedCover from "@/components/animata/image/tilted-cover";
+import BoldCopy from "@/components/animata/text/bold-copy";
+import HowToBuy from "@/components/Buy/HowToBuy";
+import DobsInfo from "@/components/Hero/DobsInfo";
 import { InfiniteDobTicker } from "@/components/Hero/InfiniteDobTicker";
 import { InitialLoader } from "@/components/Hero/Loader";
-import { ShootingStarsAndStarsBackgroundDemo } from "@/components/Hero/ShootingStarsAndStarsBackgroundDemo";
-import { TextGenerateEffectDemo } from "@/components/Hero/TextGenerateEffectDemo";
 import { ThreeDCardDemo } from "@/components/Hero/ThreeDCardDemo";
 import Navbar from "@/components/Navbar/Navbar";
+import Example from "@/components/Roadmap/Roadmap";
+import DobMerch from "@/components/DobMerchandise/DobMerch";
+import Dobonomics from "@/components/DobMerchandise/DobMerch";
 import { FlipWords } from "@/components/ui/flip-words";
-import { MultiStepLoader } from "@/components/ui/multi-step-loader";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
-
+import dynamic from "next/dynamic";
+const ComponentC = dynamic(() => import('../components/Hero/DobsInfo'), { ssr: false })
 export default function Home() {
   return (
     <main>
       <InitialLoader></InitialLoader>
-      <ShootingStars starColor="#3aafa9" trailColor="3aafa9" minDelay={500} starHeight={2} starWidth={20}></ShootingStars>
+      <ShootingStars starColor="#ffffff" trailColor="ffffff" minDelay={500} starHeight={2} starWidth={20}></ShootingStars>
       <StarsBackground starDensity={0.0009} twinkleProbability={0.9}></StarsBackground>
       <Navbar />
       <div className="flex flex-col min-h-screen bg-gradient-to-t from-green-200 to-sky-600">
@@ -47,9 +51,14 @@ export default function Home() {
             />
           </div>
         </div>
-          <InfiniteDobTicker />
+        <InfiniteDobTicker />
       </div>
 
+      <DobsInfo></DobsInfo>
+      
+      <HowToBuy></HowToBuy>
+      <Example></Example>
+      <DobMerch></DobMerch>
       {/* <TextGenerateEffectDemo></TextGenerateEffectDemo>
       <InfiniteMovingCardsDemo></InfiniteMovingCardsDemo>
       <AboutCards></AboutCards>
