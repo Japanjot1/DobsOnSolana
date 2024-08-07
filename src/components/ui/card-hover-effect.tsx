@@ -11,6 +11,7 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    icon?: React.ComponentType; // Changed to React.ComponentType
   }[];
   className?: string;
 }) => {
@@ -19,22 +20,22 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10",
         className
       )}
     >
       {items.map((item, idx) => (
         <Link
-          href={item?.link}
-          key={item?.link}
-          className="relative group  block p-2 h-full w-full"
+          href={item.link}
+          key={item.link}
+          className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-white/10 block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-white/10 block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -48,7 +49,7 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
+          <Card icon={item.icon}>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
@@ -61,9 +62,11 @@ export const HoverEffect = ({
 export const Card = ({
   className,
   children,
+  icon: Icon,
 }: {
   className?: string;
   children: React.ReactNode;
+  icon?: React.ComponentType; // Changed to React.ComponentType
 }) => {
   return (
     <div
@@ -72,12 +75,18 @@ export const Card = ({
         className
       )}
     >
-      <div className="relative z-50">
+      <div className="relative z-50 flex flex-col items-center">
+        {Icon && (
+          <div className="mb-4">
+            <Icon /> {/* Render the icon component */}
+          </div>
+        )}
         <div className="p-4">{children}</div>
       </div>
     </div>
   );
 };
+
 export const CardTitle = ({
   className,
   children,
@@ -91,6 +100,7 @@ export const CardTitle = ({
     </h4>
   );
 };
+
 export const CardDescription = ({
   className,
   children,
