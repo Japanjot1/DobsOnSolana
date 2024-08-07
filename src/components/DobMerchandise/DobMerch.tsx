@@ -5,7 +5,7 @@ import { StarsBackground } from "@/components/ui/stars-background";
 import ImageCarousel from "../animata/carousel/image-carousel";
 export default function DobMerch() {
   return (
-<div className="min-h-screen font-digital bg-neutral-900 flex flex-col items-center justify-start relative w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+<div className="min-h-screen font-digital bg-gradient-to-b from-neutral-900 to-sky-900 flex flex-col items-center justify-start relative w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
   <div className="pt-6 sm:pt-8 md:pt-10 lg:pt-12 xl:pt-16">
     <h2 className="relative  flex-col md:flex-row z-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl md:leading-tight max-w-4xl sm:max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-4 lg:gap-6">
       <span>Dobs</span>

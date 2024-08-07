@@ -26,13 +26,13 @@ export default function Navbar() {
         <span className="text-xl text-white font-extrabold"><span className="font-sans">$</span>Dobs</span>
       </Link>
       <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
-        <Link href="#" prefetch={false}>
+        <Link href="#About" prefetch={false}>
           <NavButton name={"About"} />
         </Link>
-        <Link href="#" className="hover:underline hover:underline-offset-4" prefetch={false}>
+        <Link href="#Buy" className="hover:underline hover:underline-offset-4" prefetch={false}>
           <NavButton name={"Buy"} />
         </Link>
-        <Link href="#" className="hover:underline hover:underline-offset-4" prefetch={false}>
+        <Link href="#Roadmap" className="hover:underline hover:underline-offset-4" prefetch={false}>
           <NavButton name={"Roadmap"} />
         </Link>
         <Link href="#" className="hover:underline hover:underline-offset-4" prefetch={false}>

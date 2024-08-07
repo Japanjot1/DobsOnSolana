@@ -54,10 +54,15 @@ export default function Home() {
         <InfiniteDobTicker />
       </div>
 
+    <section id="About">
       <DobsInfo></DobsInfo>
-      
+    </section>
+    <section id="Buy">
       <HowToBuy></HowToBuy>
+    </section>
+    <section id="Roadmap">
       <Example></Example>
+    </section>
       <DobMerch></DobMerch>
       {/* <TextGenerateEffectDemo></TextGenerateEffectDemo>
       <InfiniteMovingCardsDemo></InfiniteMovingCardsDemo>

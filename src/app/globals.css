@@ -67,3 +67,7 @@
     @apply bg-neutral-900 text-white;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
