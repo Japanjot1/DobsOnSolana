@@ -11,9 +11,6 @@ const loadingStates = [
     text: "Looks like a Chad clicked the link.",
   },
   {
-    text: "You won't Regret.",
-  },
-  {
     text: "Unlocking Financial Freedom...",
   },
   {
@@ -28,7 +25,7 @@ export function InitialLoader() {
     // Set up a timer to stop loading after 3 seconds
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 10000);
+    }, 8000);
   }, []);
 
   return (
