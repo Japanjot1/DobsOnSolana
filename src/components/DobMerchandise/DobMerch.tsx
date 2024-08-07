@@ -3,6 +3,7 @@ import React from "react";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import ImageCarousel from "../animata/carousel/image-carousel";
+import Expandable from "../animata/carousel/expandable";
 export default function DobMerch() {
   return (
 <div className="min-h-screen font-digital bg-gradient-to-b from-neutral-900 to-sky-900 flex flex-col items-center justify-start relative w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
@@ -33,28 +34,7 @@ export default function DobMerch() {
       Meet Dobs, the rebellious dog meme that has taken the Solana community by storm! Known for his unique and daring style, Dobs is more than just a meme—he’s a symbol of digital rebellion. Our upcoming merchandise collection celebrates Dobs with exclusive designs that capture his bold and fearless spirit. Stay tuned for a range of limited-edition apparel and accessories that will let you show off your love for Dobs in style. Be part of the revolution!
     </p>
   </div>
-
-  <div className="flex-grow flex items-center justify-center mt-4 sm:mt-6 md:mt-8 lg:mt-10 xl:mt-14">
-    <ImageCarousel
-      items={[
-        {
-          id: 1,
-          image: '/merch/shirtOne.png',
-          title: 'Item 1'
-        },
-        {
-          id: 2,
-          image: '/merch/shirtTwo.png',
-          title: 'Item 2'
-        },
-        {
-          id: 3,
-          image: '/merch/shirtThree.png',
-          title: 'Item 3'
-        },
-      ]}
-    />
-  </div>
+  <Expandable className="w-1/3" />
 </div>
 
 
