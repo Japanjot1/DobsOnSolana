@@ -24,10 +24,9 @@ const Card = ({ url, title }: { url: string; title: string }) => {
 export default function DobMerch() {
   return (
     <div className="min-h-screen font-digital bg-gradient-to-b from-neutral-900 to-sky-900 flex flex-col items-center justify-start relative w-full">
-      <div className="pt-6 sm:pt-8 md:pt-10 lg:pt-12 xl:pt-16">
-        <h2 className="relative flex-col md:flex-row z-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl md:leading-tight max-w-4xl sm:max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-4 lg:gap-6">
+      <div className="pt-2 sm:pt-4 md:pt-5 lg:pt-6 xl:pt-7">
+        <h2 className="relative flex-col md:flex-row z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl md:leading-tight max-w-4xl sm:max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-4 lg:gap-6">
           <span>Dobs</span>
-          <span className="text-white text-base sm:text-lg font-thin">x</span>
           <span>Merchandise</span>
         </h2>
         <p className="text-center pt-1 sm:pt-2 md:pt-3 lg:pt-3 xl:pt-3">Coming Soon!</p>
