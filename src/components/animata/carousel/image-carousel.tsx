@@ -48,7 +48,7 @@ export default function ImageCarousel({ items: initialItems }: IImageCarouselPro
           }
           style={{
             backgroundImage: `url(${item.image})`,
-            backgroundSize: "fit",
+            backgroundSize: "cover",
             transform:
               index === 1
                 ? "translateX(-50%) scale(1.1)"
