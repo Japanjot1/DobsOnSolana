@@ -25,8 +25,8 @@ const HorizontalScrollCarousel = () => {
 
     return (
         <section ref={targetRef} className="font-digital relative h-[300vh] bg-gradient-to-b from-sky-900 to-neutral-900">
-            <div className="text-center">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+            <div className="text-center ">
+                <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-10xl xl:text-12xl">
                     DobsMap
                 </h1>
             </div>

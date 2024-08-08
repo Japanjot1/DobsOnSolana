@@ -1,101 +1,52 @@
 "use client"
-import Link from "next/link"
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
-import { Button } from "@/components/ui/button"
-import NavButton from "./NavButton"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { FaXTwitter } from "react-icons/fa6";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import NavButton from "./NavButton";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { FaDiscord, FaTelegramPlane } from "react-icons/fa";
-const style = { color: "white", fontSize: "1em" }
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Navbar() {
   return (
-    <header className="absolute bg-transparent font-digital  flex h-16 w-full items-center justify-between px-4 md:px-6">
+    <header className="absolute bg-transparent font-digital flex h-16 w-full items-center justify-between px-4 md:px-6">
       <Link href="#" className="flex items-center gap-2" prefetch={false}>
         <Avatar>
-          <AvatarImage src="/DobsLogo.png" alt="@shadcn" />
+          <AvatarImage src="/DobsLogo.png" alt="Dobs Logo" />
         </Avatar>
-        <span className="text-xl text-white font-extrabold"><span className="font-sans">$</span>Dobs</span>
+        <span className="text-xl text-white font-extrabold">
+          <span className="font-sans">$</span>Dobs
+        </span>
       </Link>
-      <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
-        <Link href="#About" prefetch={false}>
-          <NavButton name={"About"} />
-        </Link>
-        <Link href="#Buy" className="hover:underline hover:underline-offset-4" prefetch={false}>
-          <NavButton name={"Buy"} />
-        </Link>
-        <Link href="#Roadmap" className="hover:underline hover:underline-offset-4" prefetch={false}>
-          <NavButton name={"Roadmap"} />
-        </Link>
-        <Link href="#" className="hover:underline hover:underline-offset-4" prefetch={false}>
-          <NavButton name={"Vision"} />
-        </Link>
-        <Link href="#" className="hover:underline hover:underline-offset-4" prefetch={false}>
-          <NavButton name={"Faq"} />
-        </Link>
+
+      <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+        {["About", "Buy", "Roadmap", "Dobonomics", "Socials"].map((name) => (
+          <Link key={name} href={`#${name}`} prefetch={false}>
+            <NavButton name={name} />
+          </Link>
+        ))}
       </nav>
+
       <div className="flex items-center gap-4">
         <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
-          <FaXTwitter color="#ffffff"></FaXTwitter>
+          <FaXTwitter size={24} color="#ffffff" />
         </Link>
         <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
-          <FaTelegramPlane color="#ffffff"></FaTelegramPlane>
+          <FaTelegramPlane size={24} color="#ffffff" />
         </Link>
         <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
-          <FaDiscord color="#ffffff"></FaDiscord>
+          <FaDiscord size={24} color="#ffffff" />
         </Link>
         <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
-          <DexLogo></DexLogo>
+          <DexLogo />
         </Link>
       </div>
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="outline" size="icon" className="md:hidden">
-            <MenuIcon className="h-5 w-5" />
-            <span className="sr-only">Toggle navigation menu</span>
-          </Button></DropdownMenuTrigger>
-        <DropdownMenuContent className="bg-transparent text-white m-2"> 
-          <DropdownMenuItem className="hover:bg-[#3aafa9]/50">About</DropdownMenuItem>
-          <DropdownMenuItem className="hover:bg-[#3aafa9]/50">Buy</DropdownMenuItem>
-          <DropdownMenuItem className="hover:bg-[#3aafa9]/50">Roadmap</DropdownMenuItem>
-          <DropdownMenuItem className="hover:bg-[#3aafa9]/50">Vision</DropdownMenuItem>
-          <DropdownMenuItem className="hover:bg-[#3aafa9]/50">Faq</DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
+
     </header>
-  )
+  );
 }
 
-function DiscIcon(props: any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="#17252A"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="12" r="10" />
-      <circle cx="12" cy="12" r="2" />
-    </svg>
-  )
-}
-
-
-function MenuIcon(props: any) {
+function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -113,7 +64,7 @@ function MenuIcon(props: any) {
       <line x1="4" x2="20" y1="6" y2="6" />
       <line x1="4" x2="20" y1="18" y2="18" />
     </svg>
-  )
+  );
 }
 
 function RssIcon(props: any) {

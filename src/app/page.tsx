@@ -15,6 +15,8 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import dynamic from "next/dynamic";
+import CommunityCard from "@/components/Socials/Socials";
+import MemeTrail from "@/components/DobsMemeTrail/MemeTrail";
 const ComponentC = dynamic(() => import('../components/Hero/DobsInfo'), { ssr: false })
 export default function Home() {
   return (
@@ -65,7 +67,15 @@ export default function Home() {
       <Example></Example>
     </section>
       <DobMerch></DobMerch>
+      <section id="Dobonomics">
       <Dobonomics></Dobonomics>
+      </section>
+      <section id="MemeTrail">
+      <MemeTrail></MemeTrail>
+      </section>
+      <section id="Socials">
+        <CommunityCard></CommunityCard>
+      </section>
       {/* <TextGenerateEffectDemo></TextGenerateEffectDemo>
       <InfiniteMovingCardsDemo></InfiniteMovingCardsDemo>
       <AboutCards></AboutCards>
