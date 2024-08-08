@@ -171,10 +171,10 @@ const TrailingImage = () => {
             {trailsRef.current.map((ref, index) => (
                 <AnimatedImage key={index} ref={ref} src={images[index % images.length]} />
             ))}
-            <div className="font-digital flex w-full rounded-lg  flex-1 items-center justify-center text-center text-xl sm:text-2xl md:text-4xl lg:text-6xl text-foreground">
+            <div className="font-digital flex w-full rounded-lg  flex-1 items-center justify-center text-center text-xl sm:text-xl md:text-3xl lg:text-5xl text-foreground">
                 <div className="max-w-lg border-2 p-4 rounded-lg bg-gradient-to-t from-sky-600/10 to-neutral-900/10 sm:max-w-sm md:max-w-md lg:max-w-lg">
                     <p>Came for the Web</p>
-                    <p>Hover for Memes</p>
+                    <p>Hovered for Memes</p>
                 </div>
             </div>
 
