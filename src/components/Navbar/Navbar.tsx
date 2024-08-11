@@ -31,13 +31,13 @@ export default function Navbar() {
         <Link href="https://x.com/dobs_solana" target="_blank" className="text-muted-foreground hover:text-foreground" prefetch={false}>
           <FaXTwitter size={24} color="#ffffff" />
         </Link>
-        <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+        <Link href="https://t.me/+rWCW2H49ZH0xNzNh" target="_blank" className="text-muted-foreground hover:text-foreground" prefetch={false}>
           <FaTelegramPlane size={24} color="#ffffff" />
         </Link>
-        <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+        <Link href="https://discord.gg/TeJu6zJM" target="_blank" className="text-muted-foreground hover:text-foreground" prefetch={false}>
           <FaDiscord size={24} color="#ffffff" />
         </Link>
-        <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+        <Link href="https://dexscreener.com/solana/CTtcpwwH3VuGGWhBYfHGQqGPkGUSMNHgczhuue1pump" target="_blank" className="text-muted-foreground hover:text-foreground" prefetch={false}>
           <DexLogo />
         </Link>
       </div>

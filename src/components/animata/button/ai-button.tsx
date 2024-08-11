@@ -154,7 +154,7 @@ export default function AiButton() {
           className="absolute left-3 top-3 size-1.5 animate-sparkle fill-white"
         />
 
-        <span className="font-semibold"> Buy Now! </span>
+        <span  className="font-semibold"> Buy Now! </span>
       </div>
       {!!particleState && (
         <Particles

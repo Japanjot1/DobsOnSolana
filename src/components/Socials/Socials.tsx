@@ -25,8 +25,8 @@ const Socials: React.FC = () => {
   const socialRef = useRef<HTMLDivElement | null>(null);
 
   const socialLinks = [
-    { name: 'Telegram', icon: FaTelegram, url: 'https://t.me/+rWCW2H49ZH0xNzNha' },
-    { name: 'Discord', icon: FaDiscord, url: 'https://discord.gg/X2r9G6f6ada' },
+    { name: 'Telegram', icon: FaTelegram, url: 'https://t.me/+rWCW2H49ZH0xNzNh' },
+    { name: 'Discord', icon: FaDiscord, url: 'https://discord.gg/TeJu6zJM' },
     { name: 'Twitter', icon: FaXTwitter, url: 'https://x.com/dobs_solana' },
   ];
 
