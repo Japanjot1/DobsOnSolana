@@ -28,7 +28,7 @@ export default function Navbar() {
       </nav>
 
       <div className="flex items-center gap-4">
-        <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+        <Link href="https://x.com/dobs_solana" target="_blank" className="text-muted-foreground hover:text-foreground" prefetch={false}>
           <FaXTwitter size={24} color="#ffffff" />
         </Link>
         <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
